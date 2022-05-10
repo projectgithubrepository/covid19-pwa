@@ -42,7 +42,7 @@ function Panel({ updateAt, onChange, data, country, getCoviddata}) {
 
     const renderCopyButton = (
         <div>
-            <Button variant='container' color='primary' onClic={copyInfo}>
+            <Button variant='container' color='primary' onClick={copyInfo}>
                 Copiar
             </Button>
         </div>
@@ -61,7 +61,7 @@ function Panel({ updateAt, onChange, data, country, getCoviddata}) {
                         </Select>
                     </div>
                 </div>
-                {navigatorHasShare ? renderShareButton : renderCopyButton }
+                {navigatorHasShare ? renderCopyButton : renderCopyButton }
             </CardPanelContentStyled>
         </Card>
     )
